@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Exo+2:wght@500&family=Platypi:ital,wght@0,300..800;1,300..800&family=Tiro+Devanagari+Marathi&display=swap');
+
+html,
+body {
+	margin: 0px;
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+    width: 100vw; /* Replaced "-webkit-fill-available" */
+    -webkit-font-smoothing: antialiased;
+	display: flex;
+	height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #0a183d;
+	font-weight: 600;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 15px;
+	color: #6a7080;
+	line-height: 1.8;
+	font-weight: 500;
+}
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+.section-title {
+	margin-bottom: 60px;
+}
+
+.section-title h2 {
+	font-size: 60px;
+}
+
+.set-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.spad {
+	padding-top: 75px;
+	padding-bottom: 105px;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+	color: #fff;
+}
+
+.sidebar {
+    top: 0;
+    left: 0;
+    width: 280px; 
+    background-color: black; 
+    color: #fff;
+    padding-top: 20px;
+}
+
+.main {
+	overflow: scroll;
+    width: 100%;
+}
+
+
+.sidebar-inner {
+    padding: 0 20px;
+}
+
+
+
+.header-section {
+	padding-left: 55px;
+	padding-right: 72px;
+	background: white;
+	height: 110px;
+}
+
+
+.site-logo img{
+    display: inline-block;
+    height: 200px;
+	padding-right: 40px;
+}
+.main-menu ul{
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li {
+	margin-bottom: 20px;
+}
+
+.main-menu ul li a {
+	color: wheat; 
+    text-decoration: none;
+    display: block;
+}
+
+.main-menu li a:hover {
+	color: #fc0254;
+}
+
+.main-content {
+
+    padding: 20px;
+}
+
+.main-menu li:first-child a {
+	margin-left: 0;
+}
+
+
+.hero-section {
+	overflow: hidden;
+}
+
+.hs-item {
+	height: 520px;
+	padding-bottom: 90px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: wheat;
+}
+
+.hs-item h2 {
+	color: black;
+	font-size: 70px;
+	/* margin-bottom: 25px; */
+	line-height: 0.9;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+.hs-item h2 span {
+	color: #fc0254;
+}
+
+.hs-item p {
+	color: #ffffff;
+	opacity: 0.6;
+	margin-bottom: 50px;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+
+.hs-item .hs-text {
+	margin-top: 325px;
+    max-width: 485px;
+}
+
+.hr-img img {
+	min-width: 602px;
+    position: relative;
+	padding-left: 50px;
+	margin-top: 140px;
+}
+
+
+.hero-slider .owl-dots {
+	position: absolute;
+	bottom: 33px;
+	left: calc(50% - 588px);
+	max-width: 1176px;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.hero-slider .owl-dots .owl-dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #383b70;
+	margin-right: 10px;
+}
+
+.hero-slider .owl-dots .owl-dot.active {
+	background: #fc0254;
+}
+
+.playlist-area {
+    display: flex;
+    flex-wrap: wrap;
+	gap: 15px;
+    justify-content: space-around;
+}
+.playlist-section .section-title {
+	text-align: center;
+}
+
+
+.playlist-item {
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.playlist-item img {
+	transition: transform 0.3s ease-in-out;
+	margin-bottom: 10px;
+    width: 70%;
+}
+.playlist-item img:hover {
+    transform: scale(1.1);
+}
+
+.row1{
+	display: flex;
+}
+.hr-img{
+	padding: 38% 30%;
+}
+.word{
+	color:  #fc0254;
+}
+.main-menu{
+	text-align: center;
+    font-size: 25px;
+}
+.hero-genres-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero-genres-info h3 {
+    margin-bottom: 10px;
+}
+
+.hero-genres-info p {
+    margin-bottom: 0;
+}
+
+.playlist-area img {
+	width: 230px !important;
+	height: 230px !important;
+	border-radius: 10px;
+}
+
+
+/*****************************************************************************
+* ITC5202 – Project-2 Phase 1
+* We declare that this assignment is my own work in accordance with Humber Academic
+* Policy.
+* No part of this assignment has been copied manually or electronically from any other
+* source (including web sites) or distributed to other students.
+*
+* Member 1: Samruddhi Chavan [N01604191]
+* Member 2: Manpreet Kaur Gulati [N01547963]
+* Member 3: Mitali Sisodia[N01621572]
+* Date: 07/04/2024
+*
+*
+*****************************************************************************/ 
+
+/* CSS styles for genre names */
+.genre-name {
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    flex: 0 0 25%; /* Adjust width to make 4 items in a row */
+}
+
+.genre-name img {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
+    width: 20%; /* Adjust width of images */
+    border-radius: 10px; /* Add rounded corners */
+    border: 2px solid #ccc; /* Add border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.genre-name img:hover {
+    transform: scale(1.05); /* Scale up the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+.genre-name img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px; /* Add rounded corners */
+    display: block; /* Ensure images are block elements */
+	height: auto; /* Maintain aspect ratio */
+	width: 90%;
+}
+.genre-name {
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width: 20%; /* Each genre item takes up 25% of the container */
+    float: left; /* Float the items to create columns */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 0 15px; /* Add spacing between items */
+	
+    font-weight: bold;
+   
+}
+
+.genre-name::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.genre-name:hover::after {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.playlist{
+	text-align: center;
+	padding: 30px;
+}
+.row2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center; /* Center items vertically */
+}
+
+.row2 input[type="text"] {
+    padding: 10px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc; /* Add border */
+    margin-right: 10px; /* Add spacing between elements */
+}
+
+.row2 button {
+    padding: 7px 30px;
+    margin: 5px;
+    border: none;
+    background-color: #fc0254;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row2 button:hover {
+    background-color: #ff4d88; /* Darken button color on hover */
+}
+
+div#genresContainer{
+	padding-top: 25px;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+	margin-left: 10%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 2%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Track styles */
+.track {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.track-name {
+    font-weight: bold;
+}
+
+.artist-name {
+    color: #fc0254;;
+}
+/* CSS for playlist item */
+.playlistItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.playlistItem:hover {
+    transform: translateY(-5px);
+}
+
+.playlistItem img {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.playlistName {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.playlistItem {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 30%;
+    margin-left: 33%;
+}
+ 
+.playlistItem:hover {
+    transform: translateY(-5px);
+}
+ 
+.playlistItem img {
+    width: 50%;
+    border-radius: 5px;
+}
+ 
+.playlistName {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}

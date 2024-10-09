@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloMantra</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="img/favicon.png" rel="shortcut icon" sizes="100x100">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Exo+2:wght@500&family=Platypi:ital,wght@0,300..800;1,300..800&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="sidebar">
+        <div class="sidebar-inner">
+            <a href="#" class="site-logo"><img src="img/logo.png"></a>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#" onclick="scrollToherosection()">Home</a></li>
+                    <li><a href="#" onclick="scrollToGenres()">Genres</a></li>
+                    <li><a href="#" onclick="scrollToplaylist()">Playlist</a></li>
+                    <li><a href="#">Artist</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <section class="hero-section" id="herosection">
+            <div class="hero-slider" >
+                <div class="hs-item" >
+                    <div class="container"> 
+                        <div class="row1">
+                            <div class="col-lg-6">
+                                <div class="hs-text text1 blocked">
+                                    <h2><span id="alternate-text">Listen to new music.</span></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hr-img">
+                                    <img src="img/hero-bg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="genres-section" class="playlist-section spad">
+            
+            
+                <div class="section-title">
+                    <h2>Genres</h2>
+                </div>                                         
+                <div class="row playlist-area" id="container">
+                    
+                </div>
+            </section> -->
+                <section id="genres-section">
+                <div class="container-fluid" >
+                    <div class="container">
+                        <h1 class="playlist">Genres</h1>
+                        <div class="row2">
+                        <input type="text" id="searchInput" placeholder="Search genre...">
+                        <button onclick="searchGenres()">Search</button>
+                        <button onclick="resetGenres()">Reset</button>
+                        <label for="showPlaylists">Show Playlist</label>
+                        <input type="checkbox" id="showPlaylists" onchange="togglePlaylists()">
+                        </div>
+                        <div id="genresContainer">
+
+                        </div>
+                        <section id="list">
+                            <div id="playlistsContainer"></div>
+                        </section>
+                        
+                        <div id="tracksContainer"></div>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <div id="modalTracksContainer"></div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                </section>
+        
+    </div>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>
