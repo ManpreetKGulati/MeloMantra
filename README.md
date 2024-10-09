@@ -1,16 +1,11 @@
 # MeloMantra
 MeloMantra Music Platform Development
 
-XML Project 2 Documentation Phase 1
-
 Spotify Developer Account:
 In light of our team members' existing Spotify developer accounts, we proceeded directly to creating a new application within the Spotify Developer Dashboard.
 
 
  ![Picture -1](https://github.com/user-attachments/assets/fa2ab720-4dcf-439b-ab9d-a7f3c558e800)
-
-
-
 
 
 
@@ -40,67 +35,47 @@ Client ID and Client Secret:
  ![Picture 4](https://github.com/user-attachments/assets/b4d17891-0b90-4655-be8a-de5479d15f73)
  
 
-Access Token Retrieval:
-•	The getToken() function is an asynchronous function that fetches an access token from the Spotify API using the client credentials flow.
-•	It sends a POST request to the token endpoint (https://accounts.spotify.com/api/token) with the client ID and client secret in the request headers.
-•	Upon receiving a response, it extracts the access token from the JSON data and stores it in the accessToken variable.
-
-![Picture 5](https://github.com/user-attachments/assets/100ac6d4-90d1-4c25-98c7-a9df8c15e249)
-
-
-
-Data Fetching:
-•	The getData(token) function fetches genre data from the Spotify API using the obtained access token.
-•	It sends a GET request to the API endpoint (https://api.spotify.com/v1/browse/categories) with the access token in the request headers.
-•	The response data is then parsed as JSON, and the displayGenre(itemList) function is called to display the fetched genres on the webpage.
-
-![Picture 6](https://github.com/user-attachments/assets/8da50f8c-8f89-49c1-ad9e-5a6d39b10f81)
-
-![Picture 7](https://github.com/user-attachments/assets/37701206-5597-496f-b0cf-314491bd286c)
-
-
-
-Genre Display:
-•	The displayGenre(itemList) function dynamically generates HTML markup to display each genre as a card.
-•	It iterates over the list of genres (itemList) and constructs HTML elements containing the genre's name and image.
-•	The constructed HTML markup is then inserted into the container element with the ID container.
- 
-
- ![Picture 8](https://github.com/user-attachments/assets/43372f84-acba-4a3e-8603-060857bd3833)
-
-
-
-Additional Functionalities:
-•	The scrollToGenres() function scrolls smoothly to the genres section when called, enhancing user experience.
-![Picture 9](https://github.com/user-attachments/assets/f17e7edb-ffbf-41ab-b515-16487e2332c8)
-
- 
-
-
-•	The alternateText() function dynamically alternates text content within an element at regular intervals, adding a dynamic element to the webpage.
-
-![Picture 10](https://github.com/user-attachments/assets/285c27a1-60c6-4063-b855-e7870bc74cfe)
 
 
 
 
-Key Features:
-•	Spotify API Integration: The platform integrates with the Spotify API to fetch music genre data and display playlists associated with each genre.
-•	Dynamic Text Alternation: The hero section of the platform features dynamic text alternation, providing users with engaging content.
-•	Responsive Design: The platform is designed to be responsive, ensuring compatibility across various devices and screen sizes.
-•	Navigation: The navigation menu allows users to easily navigate between different sections of the platform, including the home page and genres section.
 
 Screenshots
 
-![Picture 11](https://github.com/user-attachments/assets/e116cee3-3451-4182-acb3-711d5d905961)
 
- 
- ![Picture 12](https://github.com/user-attachments/assets/a878fe4f-246e-4929-9a86-20128c663c96)
+To display the genres when ‘Show Playlist’ checkbox is selected:
+![Picture 18](https://github.com/user-attachments/assets/ea06e46f-1c4c-4373-869e-e384c929674e)
 
-![Picture 13](https://github.com/user-attachments/assets/72a50bf6-3c69-4e77-969c-a4820de91d86)
+![Picture 19](https://github.com/user-attachments/assets/b4cbf3d4-2da8-42cd-ba47-9b308e552716)
 
 
- 
+Playlists with respective genre displayed for user-friendly experience:
+
+![Picture 20](https://github.com/user-attachments/assets/0196ffdb-5e1f-4e2c-9d5a-632eae2990f0)
+
+![Picture 21](https://github.com/user-attachments/assets/5f566c30-255e-49a1-a341-10120181232b)
+
+
+Fetch Tracks for selected Playlist:
+
+![Picture 22](https://github.com/user-attachments/assets/2aaee1a9-c851-443f-9772-14a2947c625e)
+
+Tracks for selected Playlist named ‘Hipple Vibes’:
+![Picture 23](https://github.com/user-attachments/assets/a04ab454-ab87-4c33-b1ee-275b1da4f566)
+
+![Picture 24](https://github.com/user-attachments/assets/291dbe59-59c0-40dc-809c-e24db181d5e5)
+
+After search operation executed:
+![Picture 30](https://github.com/user-attachments/assets/bf0ff540-8217-4750-bea5-e1a81504a660)
+
+
+After playlists displayed:
+
+![Picture 31](https://github.com/user-attachments/assets/42fe5f48-2da1-4b9b-8997-c8f542377618)
+
+
+
+
 
 
 
